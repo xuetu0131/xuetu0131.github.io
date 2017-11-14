@@ -6,19 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>在bootstrap中使用select | 学徒0131的博客</title>
+  <title>categories | 学徒0131的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录一下 bootstrap 中 select 的几种方式1. 在 boostrap 4 以下的版本中可以使用插件 bootstrap-select 具体的使用方式 点击这里 2. 在 boostrap 4 版本中目前 bootstrap-select 还不支持4以上的版本。为了实现 bootstrap 风格的select有这两种方式： 用 bootstrap 的 dropdown 功能实现htm">
-<meta name="keywords" content="bootstrap">
-<meta property="og:type" content="article">
-<meta property="og:title" content="在bootstrap中使用select">
-<meta property="og:url" content="http://yoursite.com/2017/11/10/在bootstrap中使用select/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="http://yoursite.com/categories/index.html">
 <meta property="og:site_name" content="学徒0131的博客">
-<meta property="og:description" content="记录一下 bootstrap 中 select 的几种方式1. 在 boostrap 4 以下的版本中可以使用插件 bootstrap-select 具体的使用方式 点击这里 2. 在 boostrap 4 版本中目前 bootstrap-select 还不支持4以上的版本。为了实现 bootstrap 风格的select有这两种方式： 用 bootstrap 的 dropdown 功能实现htm">
-<meta property="og:updated_time" content="2017-11-14T14:14:19.508Z">
+<meta property="og:updated_time" content="2017-11-14T14:11:38.981Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在bootstrap中使用select">
-<meta name="twitter:description" content="记录一下 bootstrap 中 select 的几种方式1. 在 boostrap 4 以下的版本中可以使用插件 bootstrap-select 具体的使用方式 点击这里 2. 在 boostrap 4 版本中目前 bootstrap-select 还不支持4以上的版本。为了实现 bootstrap 风格的select有这两种方式： 用 bootstrap 的 dropdown 功能实现htm">
+<meta name="twitter:title" content="categories">
   
     <link rel="alternative" href="/atom.xml" title="学徒0131的博客" type="application/atom+xml">
   
@@ -148,20 +144,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-在bootstrap中使用select" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      在bootstrap中使用select
+      categories
     </h1>
   
 
         
-        <a href="/2017/11/10/在bootstrap中使用select/" class="archive-article-date">
-  	<time datetime="2017-11-10T02:41:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-10</time>
+        <a href="/categories/index.html" class="archive-article-date">
+  	<time datetime="2017-11-14T14:11:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-14</time>
 </a>
         
       </header>
@@ -169,14 +165,16 @@
     <div class="article-entry" itemprop="articleBody">
 		
 			
-			
-				<h3 id="记录一下-bootstrap-中-select-的几种方式"><a href="#记录一下-bootstrap-中-select-的几种方式" class="headerlink" title="记录一下 bootstrap 中 select 的几种方式"></a>记录一下 bootstrap 中 select 的几种方式</h3><h4 id="1-在-boostrap-4-以下的版本中"><a href="#1-在-boostrap-4-以下的版本中" class="headerlink" title="1. 在 boostrap 4 以下的版本中"></a>1. 在 boostrap 4 以下的版本中</h4><p>可以使用插件 bootstrap-select 具体的使用方式 <a href="https://silviomoreto.github.io/bootstrap-select/" target="_blank" rel="external">点击这里</a></p>
-<h4 id="2-在-boostrap-4-版本中"><a href="#2-在-boostrap-4-版本中" class="headerlink" title="2. 在 boostrap 4 版本中"></a>2. 在 boostrap 4 版本中</h4><p>目前 bootstrap-select 还不支持4以上的版本。<br>为了实现 bootstrap 风格的select有这两种方式：</p>
-<h5 id="用-bootstrap-的-dropdown-功能实现"><a href="#用-bootstrap-的-dropdown-功能实现" class="headerlink" title="用 bootstrap 的 dropdown 功能实现"></a>用 bootstrap 的 dropdown 功能实现</h5><p>html:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;h2&gt;Bootstrap Dropdown as Select&lt;/h2&gt;</span><br><span class="line">  &lt;div class=&quot;btn-group&quot;&gt;</span><br><span class="line">    &lt;a class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;Select a Country &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;</span><br><span class="line">    &lt;ul class=&quot;dropdown-menu&quot;&gt;</span><br><span class="line">      &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item I&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">      &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item II&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">      &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item III&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">      &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item IV&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">      &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item V&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">      &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Other&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">    &lt;/ul&gt;</span><br><span class="line">  &lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
-<p>jQuery:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;.dropdown-menu li a&quot;).click(function()&#123;</span><br><span class="line">  var selText = $(this).text();</span><br><span class="line">  $(this).parents(&apos;.btn-group&apos;).find(&apos;.dropdown-toggle&apos;).html(selText+&apos; &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&apos;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
-<h5 id="用-bootstrap-的-form-control"><a href="#用-bootstrap-的-form-control" class="headerlink" title="用 bootstrap 的 .form-control"></a>用 bootstrap 的 .form-control</h5><p> bootstrap 4 中提供了 bootstrap 风格的 select 示例代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;select class=&quot; form-control &quot;&gt;</span><br><span class="line">	&lt;option&gt;###&lt;/option&gt;</span><br><span class="line">	&lt;option&gt;###&lt;/option&gt;</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure></p>
-
-			
+			<div class="category-all-page">
+				<div class="category-all-title">
+					counter.categories
+				</div>
+				
+				<div class="category-all">
+					<ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/coding/">coding</a><span class="category-list-count">1</span></li></ul>
+				</div>
+				
+			</div>
 		
 
       
@@ -205,29 +203,7 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">bootstrap</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/coding//" class="article-tag-list-link color2">coding</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
 
@@ -277,7 +253,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/11/10/在bootstrap中使用select/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/categories/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -289,16 +265,6 @@
 </article>
 
   
-<nav id="article-nav">
-  
-  
-    <a href="/2017/11/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -349,7 +315,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
