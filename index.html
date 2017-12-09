@@ -145,6 +145,108 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-git使用遇到的问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/09/git使用遇到的问题/">git使用遇到的问题</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/09/git使用遇到的问题/" class="archive-article-date">
+  	<time datetime="2017-12-09T11:34:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+		
+			
+			
+				<p>###git使用和群晖git server搭建遇到的问题<br>记录一下在使用群晖搭建git server在使用时遇到的一些问题：</p>
+<h4 id="1-群晖git-server搭建时的问题"><a href="#1-群晖git-server搭建时的问题" class="headerlink" title="1. 群晖git server搭建时的问题"></a>1. 群晖git server搭建时的问题</h4><p>群晖搭建git server是非常容易的具体网上随便搜方法：<br>想要使用git server就要打开群晖的家目录(控制面板-&gt;用户账号-&gt;高级设置)。但是一旦打开家目录就会使每个用户都可以访问其他用户的存储信息，只能分别设置不同文件夹的权限将非本账号的home文件都设置为拒绝读取和写入。但是从群晖的DSM说明中可以看到原来是有一个用户主目录选项可以达到权限控制的效果,不懂为什么要去掉。<br><img src="/assets/img/用户主目录.jpg" alt="用户主目录"></p>
+<h4 id="2-git使用中的问题"><a href="#2-git使用中的问题" class="headerlink" title="2. git使用中的问题"></a>2. git使用中的问题</h4><ul>
+<li>远程存储库的地址输入写错<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fatal: &apos;origin&apos; does not appear to be a git repository</span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>对比正确的格式<code>git remote add [origin或别的名字] ssh://[Git 用户]@[您的 Synology 服务器 IP 地址或主机名]/[Git 存储库路径]</code>  <strong>不要忘记<code>ssh://</code></strong></p>
+<ul>
+<li>git server 建远程仓库<br>用<code>git init --bare</code>建远程仓库，<br>用<code>git init</code>建本地库。(目前还没弄明白，反正就这样用吧)</li>
+</ul>
+<p>建仓库时用 git_repos/你要的名字.git<br>而不是 git_repos/你要的名字/.git</p>
+<ul>
+<li>git push 卡在write object<br><code>git config --global sendpack.sideband false</code></li>
+<li>git broken pipe<br><code>git config http.postBuffer 209715200</code></li>
+</ul>
+
+			
+		
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/coding//" class="article-tag-list-link color2">coding</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/09/git使用遇到的问题/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-在bootstrap中使用select" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -401,6 +503,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">bootstrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
             
             <div class="clearfix"></div>

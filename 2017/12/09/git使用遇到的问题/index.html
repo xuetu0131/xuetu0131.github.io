@@ -6,14 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: bootstrap | 学徒0131的博客</title>
+  <title>git使用遇到的问题 | 学徒0131的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="学徒0131的博客">
-<meta property="og:url" content="http://yoursite.com/tags/bootstrap/index.html">
+  <meta name="description" content="###git使用和群晖git server搭建遇到的问题记录一下在使用群晖搭建git server在使用时遇到的一些问题： 1. 群晖git server搭建时的问题群晖搭建git server是非常容易的具体网上随便搜方法：想要使用git server就要打开群晖的家目录(控制面板-&amp;gt;用户账号-&amp;gt;高级设置)。但是一旦打开家目录就会使每个用户都可以访问其他用户的存储信息，只能分别设置不">
+<meta name="keywords" content="git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git使用遇到的问题">
+<meta property="og:url" content="http://yoursite.com/2017/12/09/git使用遇到的问题/index.html">
 <meta property="og:site_name" content="学徒0131的博客">
+<meta property="og:description" content="###git使用和群晖git server搭建遇到的问题记录一下在使用群晖搭建git server在使用时遇到的一些问题： 1. 群晖git server搭建时的问题群晖搭建git server是非常容易的具体网上随便搜方法：想要使用git server就要打开群晖的家目录(控制面板-&amp;gt;用户账号-&amp;gt;高级设置)。但是一旦打开家目录就会使每个用户都可以访问其他用户的存储信息，只能分别设置不">
+<meta property="og:image" content="http://yoursite.com/assets/img/用户主目录.jpg">
+<meta property="og:updated_time" content="2017-12-09T13:21:31.108Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学徒0131的博客">
+<meta name="twitter:title" content="git使用遇到的问题">
+<meta name="twitter:description" content="###git使用和群晖git server搭建遇到的问题记录一下在使用群晖搭建git server在使用时遇到的一些问题： 1. 群晖git server搭建时的问题群晖搭建git server是非常容易的具体网上随便搜方法：想要使用git server就要打开群晖的家目录(控制面板-&amp;gt;用户账号-&amp;gt;高级设置)。但是一旦打开家目录就会使每个用户都可以访问其他用户的存储信息，只能分别设置不">
+<meta name="twitter:image" content="http://yoursite.com/assets/img/用户主目录.jpg">
   
     <link rel="alternative" href="/atom.xml" title="学徒0131的博客" type="application/atom+xml">
   
@@ -143,48 +150,85 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-git使用遇到的问题" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/10/在bootstrap中使用select/" class="archive-article-date">
-  	<time datetime="2017-11-10T02:41:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/10/在bootstrap中使用select/">在bootstrap中使用select</a>
+    <h1 class="article-title" itemprop="name">
+      git使用遇到的问题
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/12/09/git使用遇到的问题/" class="archive-article-date">
+  	<time datetime="2017-12-09T11:34:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+		
+			
+			
+				<p>###git使用和群晖git server搭建遇到的问题<br>记录一下在使用群晖搭建git server在使用时遇到的一些问题：</p>
+<h4 id="1-群晖git-server搭建时的问题"><a href="#1-群晖git-server搭建时的问题" class="headerlink" title="1. 群晖git server搭建时的问题"></a>1. 群晖git server搭建时的问题</h4><p>群晖搭建git server是非常容易的具体网上随便搜方法：<br>想要使用git server就要打开群晖的家目录(控制面板-&gt;用户账号-&gt;高级设置)。但是一旦打开家目录就会使每个用户都可以访问其他用户的存储信息，只能分别设置不同文件夹的权限将非本账号的home文件都设置为拒绝读取和写入。但是从群晖的DSM说明中可以看到原来是有一个用户主目录选项可以达到权限控制的效果,不懂为什么要去掉。<br><img src="/assets/img/用户主目录.jpg" alt="用户主目录"></p>
+<h4 id="2-git使用中的问题"><a href="#2-git使用中的问题" class="headerlink" title="2. git使用中的问题"></a>2. git使用中的问题</h4><ul>
+<li>远程存储库的地址输入写错<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fatal: &apos;origin&apos; does not appear to be a git repository</span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>对比正确的格式<code>git remote add [origin或别的名字] ssh://[Git 用户]@[您的 Synology 服务器 IP 地址或主机名]/[Git 存储库路径]</code>  <strong>不要忘记<code>ssh://</code></strong></p>
+<ul>
+<li>git server 建远程仓库<br>用<code>git init --bare</code>建远程仓库，<br>用<code>git init</code>建本地库。(目前还没弄明白，反正就这样用吧)</li>
+</ul>
+<p>建仓库时用 git_repos/你要的名字.git<br>而不是 git_repos/你要的名字/.git</p>
+<ul>
+<li>git push 卡在write object<br><code>git config --global sendpack.sideband false</code></li>
+<li>git broken pipe<br><code>git config http.postBuffer 209715200</code></li>
+</ul>
+
+			
+		
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">bootstrap</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -197,17 +241,104 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/12/09/git使用遇到的问题/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/11/10/在bootstrap中使用select/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">在bootstrap中使用select</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -230,9 +361,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
