@@ -1,13 +1,13 @@
 ---
 title: git使用遇到的问题
 date: 2017-12-09 19:34:07
-tags:[git]
+tags: [git]
 categories: [coding]
 ---
 ###git使用和群晖git server搭建遇到的问题
 记录一下在使用群晖搭建git server在使用时遇到的一些问题：
 #### 1. 群晖git server搭建时的问题
-群晖搭建git server是非常容易的具体网上随便搜方法：[方法-1](http://blog.csdn.net/kaulctin/article/details/68080043)
+群晖搭建git server是非常容易的具体网上随便搜方法：
 想要使用git server就要打开群晖的家目录(控制面板->用户账号->高级设置)。但是一旦打开家目录就会使每个用户都可以访问其他用户的存储信息，只能分别设置不同文件夹的权限将非本账号的home文件都设置为拒绝读取和写入。但是从群晖的DSM说明中可以看到原来是有一个用户主目录选项可以达到权限控制的效果,不懂为什么要去掉。
 ![用户主目录](/assets/img/用户主目录.jpg)
 #### 2. git使用中的问题
