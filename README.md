@@ -4,7 +4,7 @@
 1. git pull 这个仓库
 2. hexo new "新博客title"
 3. 进入source文件夹_post文件夹编辑这个文件
-*[,]多便签*
+     *[,]多便签*
 5. hexo g 
 6. hexo s 开启服务器检查一遍
 7. hexo d 推到这个master线程
