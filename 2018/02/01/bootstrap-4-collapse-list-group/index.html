@@ -17,7 +17,7 @@
 <meta property="og:description" content="###记录一下bootstrap 4中如何产生可以下拉的list group在使用list group时想要做一个可以下拉的sidebar但是如果只是简单的使用collapse产生的下拉内容会重新生成一个下拉表格如下这样的话collapse的内容会形成两个圆角，不美观。但是自己又懒的写css所以想了个直接用bootstrap的解决方法：直接上代码12345678910111213&amp;lt;div c">
 <meta property="og:image" content="http://yoursite.com/assets/img/collapse1.jpg">
 <meta property="og:image" content="http://yoursite.com/assets/img/collapse2.jpg">
-<meta property="og:updated_time" content="2018-02-01T08:14:32.316Z">
+<meta property="og:updated_time" content="2018-02-01T08:18:43.423Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bootstrap 4 collapse list-group">
 <meta name="twitter:description" content="###记录一下bootstrap 4中如何产生可以下拉的list group在使用list group时想要做一个可以下拉的sidebar但是如果只是简单的使用collapse产生的下拉内容会重新生成一个下拉表格如下这样的话collapse的内容会形成两个圆角，不美观。但是自己又懒的写css所以想了个直接用bootstrap的解决方法：直接上代码12345678910111213&amp;lt;div c">
@@ -175,7 +175,7 @@
 			
 				<p>###记录一下bootstrap 4中如何产生可以下拉的list group<br>在使用list group时想要做一个可以下拉的sidebar但是如果只是简单的使用collapse产生的下拉内容会重新生成一个下拉表格如下<br><img src="/assets/img/collapse1.jpg" alt="图例1"><br>这样的话collapse的内容会形成两个圆角，不美观。<br>但是自己又懒的写css所以想了个直接用bootstrap的解决方法：<br>直接上代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;list-group&quot;&gt;</span><br><span class="line">	&lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;&quot; href=&quot;#&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapseOne&quot;&gt;items&lt;/a&gt;</span><br><span class="line">	&lt;div class=&quot;collapse show &quot; id=&quot;collapseOne&quot;&gt;</span><br><span class="line">		&lt;a class=&quot;list-group-item list-group-item-action d-none&quot; id=&quot;&quot; href=&quot;#&quot;&gt;&lt;/a&gt;</span><br><span class="line">		&lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;&quot; href=&quot;#&quot;&gt;item1&lt;/a&gt;</span><br><span class="line">		&lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;&quot; href=&quot;#&quot;&gt;item2&lt;/a&gt;</span><br><span class="line">		&lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;&quot; href=&quot;#&quot;&gt;item3&lt;/a&gt;</span><br><span class="line">		&lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;&quot; href=&quot;#&quot;&gt;item4&lt;/a&gt;</span><br><span class="line">		&lt;a class=&quot;list-group-item list-group-item-action d-none&quot; id=&quot;&quot; href=&quot;#&quot;&gt;&lt;/a&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">	&lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;&quot; href=&quot;#&quot;&gt;items&lt;/a&gt;</span><br><span class="line">	&lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;&quot; href=&quot;#&quot;&gt;items&lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
 <p>结果：<br><img src="/assets/img/collapse2.jpg" alt="图例2"></p>
-<p>这个方法在collapse内容的两端加一个空的<a>标记，再将这两个空的标记利用<code>d-none</code>隐藏就可以达到原生list group的效果。<strong><em>但是这样的话不能把最后一个list item添加collpse</em></strong>。</a></p>
+<p>这个方法在collapse内容的两端加一个空的<code>&lt;a&gt;</code>标记，再将这两个空的标记利用<code>d-none</code>隐藏就可以达到原生list group的效果。<strong>但是这样的话不能把最后一个list item添加collpse</strong>。</p>
 
 			
 		
@@ -416,11 +416,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color5">bootstrap</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">bootstrap</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
