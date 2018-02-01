@@ -6,14 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 学徒0131的博客</title>
+  <title>bootstrap 4 collapse list-group | 学徒0131的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="学徒0131的博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="###记录一下bootstrap 4中如何产生可以下拉的list group在使用list group时想要做一个可以下拉的sidebar但是如果只是简单的使用collapse产生的下拉内容会重新生成一个下拉表格如下这样的话collapse的内容会形成两个圆角，不美观。但是自己又懒的写css所以想了个直接用bootstrap的解决方法：直接上代码12345678910111213&amp;lt;div c">
+<meta name="keywords" content="bootstrap">
+<meta property="og:type" content="article">
+<meta property="og:title" content="bootstrap 4 collapse list-group">
+<meta property="og:url" content="http://yoursite.com/2018/02/01/bootstrap-4-collapse-list-group/index.html">
 <meta property="og:site_name" content="学徒0131的博客">
+<meta property="og:description" content="###记录一下bootstrap 4中如何产生可以下拉的list group在使用list group时想要做一个可以下拉的sidebar但是如果只是简单的使用collapse产生的下拉内容会重新生成一个下拉表格如下这样的话collapse的内容会形成两个圆角，不美观。但是自己又懒的写css所以想了个直接用bootstrap的解决方法：直接上代码12345678910111213&amp;lt;div c">
+<meta property="og:image" content="http://yoursite.com/assets/img/collapse1.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/collapse2.jpg">
+<meta property="og:updated_time" content="2018-02-01T08:14:32.316Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学徒0131的博客">
+<meta name="twitter:title" content="bootstrap 4 collapse list-group">
+<meta name="twitter:description" content="###记录一下bootstrap 4中如何产生可以下拉的list group在使用list group时想要做一个可以下拉的sidebar但是如果只是简单的使用collapse产生的下拉内容会重新生成一个下拉表格如下这样的话collapse的内容会形成两个圆角，不美观。但是自己又懒的写css所以想了个直接用bootstrap的解决方法：直接上代码12345678910111213&amp;lt;div c">
+<meta name="twitter:image" content="http://yoursite.com/assets/img/collapse1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="学徒0131的博客" type="application/atom+xml">
   
@@ -143,36 +151,61 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-bootstrap-4-collapse-list-group" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      bootstrap 4 collapse list-group
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/02/01/bootstrap-4-collapse-list-group/" class="archive-article-date">
+
+        
+        <a href="/2018/02/01/bootstrap-4-collapse-list-group/" class="archive-article-date">
   	<time datetime="2018-02-01T07:49:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-01</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/01/bootstrap-4-collapse-list-group/">bootstrap 4 collapse list-group</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+		
+			
+			
+				<p>###记录一下bootstrap 4中如何产生可以下拉的list group<br>在使用list group时想要做一个可以下拉的sidebar但是如果只是简单的使用collapse产生的下拉内容会重新生成一个下拉表格如下<br><img src="/assets/img/collapse1.jpg" alt="图例1"><br>这样的话collapse的内容会形成两个圆角，不美观。<br>但是自己又懒的写css所以想了个直接用bootstrap的解决方法：<br>直接上代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;list-group&quot;&gt;</span><br><span class="line">	&lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;&quot; href=&quot;#&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapseOne&quot;&gt;items&lt;/a&gt;</span><br><span class="line">	&lt;div class=&quot;collapse show &quot; id=&quot;collapseOne&quot;&gt;</span><br><span class="line">		&lt;a class=&quot;list-group-item list-group-item-action d-none&quot; id=&quot;&quot; href=&quot;#&quot;&gt;&lt;/a&gt;</span><br><span class="line">		&lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;&quot; href=&quot;#&quot;&gt;item1&lt;/a&gt;</span><br><span class="line">		&lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;&quot; href=&quot;#&quot;&gt;item2&lt;/a&gt;</span><br><span class="line">		&lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;&quot; href=&quot;#&quot;&gt;item3&lt;/a&gt;</span><br><span class="line">		&lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;&quot; href=&quot;#&quot;&gt;item4&lt;/a&gt;</span><br><span class="line">		&lt;a class=&quot;list-group-item list-group-item-action d-none&quot; id=&quot;&quot; href=&quot;#&quot;&gt;&lt;/a&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">	&lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;&quot; href=&quot;#&quot;&gt;items&lt;/a&gt;</span><br><span class="line">	&lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;&quot; href=&quot;#&quot;&gt;items&lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>结果：<br><img src="/assets/img/collapse2.jpg" alt="图例2"></p>
+<p>这个方法在collapse内容的两端加一个空的<a>标记，再将这两个空的标记利用<code>d-none</code>隐藏就可以达到原生list group的效果。<strong><em>但是这样的话不能把最后一个list item添加collpse</em></strong>。</a></p>
 
-        <div class="article-info info-on-right">
-          
+			
+		
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -184,115 +217,7 @@
 		</ul>
 	</div>
 
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/coding//" class="article-tag-list-link color2">coding</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/22/第一个网站/" class="archive-article-date">
-  	<time datetime="2018-01-22T07:59:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/22/第一个网站/">第一个网站</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mygpu</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/coding//" class="article-tag-list-link color2">coding</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
       
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/09/git使用遇到的问题/" class="archive-article-date">
-  	<time datetime="2017-12-09T11:34:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/09/git使用遇到的问题/">git使用遇到的问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -305,93 +230,104 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/02/01/bootstrap-4-collapse-list-group/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/10/在bootstrap中使用select/" class="archive-article-date">
-  	<time datetime="2017-11-10T02:41:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-10</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/01/22/第一个网站/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">第一个网站</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/10/在bootstrap中使用select/">在bootstrap中使用select</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">bootstrap</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/coding//" class="article-tag-list-link color2">coding</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/09/hello-world/" class="archive-article-date">
-  	<time datetime="2017-11-09T12:33:16.631Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-09</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/09/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -414,8 +350,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
